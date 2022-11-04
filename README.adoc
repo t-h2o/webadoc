@@ -1,3 +1,14 @@
 = Webadoc
 
 > Challenge: Create all contents of a website with the https://docs.asciidoctor.org[AsciiDoc] markup language and build it with https://docs.asciidoctor.org[AsciiDoctor].
+
+== Project tree
+
+----
+.
+├── Makefile
+├── adoc
+│   └── index.adoc
+└── site
+    └── index.html
+----
