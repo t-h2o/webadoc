@@ -10,5 +10,7 @@
 ├── adoc
 │   └── index.adoc
 └── site
+    ├── images
+    │   └── image.png
     └── index.html
 ----

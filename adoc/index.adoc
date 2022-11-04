@@ -1,1 +1,208 @@
 = Website
+
+:imagesdir: images
+
+:hide-uri-scheme: yes
+
+When you want refresh each time you save adoc into vim. 
+
+----
+:autocmd BufWritePre adoc/index.html make
+----
+
+== Writing in AsciiDoc
+
+This journey begins one late Monday afternoon in Antwerp.
+Our team desperately needs coffee, but none of us dare open the office door.
+
+To leave means code dismemberment and certain death.
+
+Rubies are red, +
+Topazes are blue.
+
+[%hardbreaks]
+Ruby is red.
+Java is black.
+
+== Mild punctuation, strong impact
+
+bold *constrained* & **un**constrained
+
+italic _constrained_ & __un__constrained
+
+bold italic *_constrained_* & **__un__**constrained
+
+monospace `constrained` & ``un``constrained
+
+monospace bold `*constrained*` & ``**un**``constrained
+
+monospace italic `_constrained_` & ``__un__``constrained
+
+monospace bold italic `*_constrained_*` & ``**__un__**``constrained
+
+Type the word [.userinput]#asciidoc# into the search bar.
+
+== Warning
+
+WARNING: Wolpertingers are known to nest in server racks.   
+Enter at your own risk.
+
+== Preventing substitution
+
+=== Backslash escaping
+
+\*Stars* will appear as *Stars*, not as bold text.
+
+\&sect; will appear as an entity, not the &sect; symbol.
+
+\\__func__ will appear as __func__, not as emphasized text.
+
+\{two-semicolons} will appear {two-semicolons}, not resolved as ;;.
+
+=== inline pass macro
+
+pass:[content like #{variable} passed directly to the output] followed by normal content.
+
+content with only select substitutions applied: pass:c,a[__<{email}>__]
+
+== Replacements
+
+AsciiDoc also recognizes textual representations of symbols, arrows and dashes.
+
+=== Textual symbol replacements
+
+(C) (Copyright)...
+
+== List
+
+.Kizmet's Favorite Authors
+* Edgar Allan Poe
+* Sheri S. Tepper
+* Bill Bryson
+
+=== Separate lists
+
+* Apples
+* Oranges
+
+//-
+
+* Walnuts
+* Almonds
+
+=== Ordered list
+
+.A nested ordered list
+. Step 1
+. Step 2
+.. Step 2a
+.. Step 2b
+. Step 3
+
+=== Hybrid list
+
+. Linux
+* Fedora
+* Ubuntu
+* Slackware
+. BSD
+* FreeBSD
+* NetBSD
+
+=== Specifications
+
+[lowerroman, start=5]
+. Five
+. Six
+[loweralpha]
+.. a
+.. b
+.. c
+. Seven
+
+=== Description lists
+
+==== Hardware
+
+[horizontal]
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.
+
+==== Foods
+
+Dairy::
+* Milk
+* Eggs
+Bakery::
+* Bread
+Produce::
+* Bananas
+
+==== Hybrid lists
+
+Operating Systems::
+  Linux:::
+    . Fedora
+      * Desktop
+    . Ubuntu
+      * Desktop
+      * Server
+  BSD:::
+    . FreeBSD
+    . NetBSD
+
+Cloud Providers::
+  PaaS:::
+    . OpenShift
+    . CloudBees
+  IaaS:::
+    . Amazon EC2
+    . Rackspace
+
+== Links
+
+https://asciidoctor.org
+
+Chat with other Fedora users in the irc://irc.freenode.org/#fedora[Fedora IRC channel].
+
+=== Hide
+
+https://asciidoctor.org
+
+=== Ecosia
+
+https://asciidoctor.org
+
+search/link:https://ecosia.org[Ecosia]
+
+== Image
+
+[#img-sunset]
+.A mountain sunset
+[link=https://www.flickr.com/photos/javh/5448336655]
+image::sunset.png[Sunset,300,200]
+
+Press the image:sunset.png[Save, title="Save",30,20] button.
+
+=== Tables
+
+[cols="2,3,5a"]
+|===
+|Name |Group |Description
+
+|Firefox
+|Web Browser
+|Mozilla Firefox is an open-source web browser.
+It's designed for:
+
+* standards compliance,
+* performance and
+* portability.
+
+|Ruby
+|Programming Language
+|A programmer's best friend.
+
+...
+|===
