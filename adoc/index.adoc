@@ -1,14 +1,40 @@
 = Website
-
+:toc: left
+:toc-title: Table of Adventures
 :imagesdir: images
-
 :hide-uri-scheme: yes
+
+:stylesdir: css
+:stylesheet: main.css
 
 When you want refresh each time you save adoc into vim. 
 
 ----
-:autocmd BufWritePre adoc/index.html make
+:autocmd BufWritePost *.adoc make
 ----
+
+== Attributs
+
+
+== Warning
+
+WARNING: When you set attributs in your adoc, do not set empty lines between them, else, all attributs after an empty lines are not used.
+
+== Side
+
+.Optional Title
+****
+Sidebars are used to visually separate auxiliary bits of content
+that supplement the main text.
+
+TIP: They can contain any type of content.
+
+.Source code block in a sidebar
+[source,js]
+----
+const { expect, expectCalledWith, heredoc } = require('../test/test-utils')
+----
+****
 
 == Writing in AsciiDoc
 
