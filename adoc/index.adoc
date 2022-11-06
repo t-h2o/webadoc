@@ -9,6 +9,7 @@ Firstname Lastname <author@asciidoctor.org>
 :favicon: icons/favicon.png
 :stylesdir: css
 :stylesheet: dark.css
+:imagesdir: images
 
 Content entered directly below the header but before the first section heading is called the preamble.
 
@@ -52,7 +53,7 @@ Find the area under the graph of \$y = x^2\$ between \$x= 1\$ and \$x = 2\$.
 == Images
 
 .Image caption
-image::resources/picture.jpg[This is the image alt text.]
+image::picture.jpg[This is the image alt text.]
 
 == Footnotes
 
