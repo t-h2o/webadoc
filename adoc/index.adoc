@@ -7,6 +7,8 @@ Firstname Lastname <author@asciidoctor.org>
 :stem: latexmath
 :quick-uri: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 :favicon: icons/favicon.png
+:stylesdir: css
+:stylesheet: dark.css
 
 Content entered directly below the header but before the first section heading is called the preamble.
 
