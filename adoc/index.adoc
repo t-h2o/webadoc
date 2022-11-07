@@ -10,6 +10,8 @@ Firstname Lastname <author@asciidoctor.org>
 :stylesdir: css
 :stylesheet: dark.css
 :imagesdir: images
+:docinfo: shared-footer
+:nofooter:
 
 Content entered directly below the header but before the first section heading is called the preamble.
 
